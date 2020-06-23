@@ -7,8 +7,9 @@ fs.readFile('2020_jizhuan.json', (err, data) => {
     let points = JSON.parse(data);
     var tmpid = points.length;
     var length = points.length;
+	console.log(length);
     for (var i = 0; i < length; i++){
-	    for (var j=0; j< 50; j++){
+	    for (var j=0; j < 1; j++){
       let tmp_la = (parseFloat(points[i].la) + Math.random()/20).toFixed(6);
       let tmp_lo = (parseFloat(points[i].lo) + Math.random()/20).toFixed(6);
       let tmp_coname = points[Math.floor(Math.random() * 10)].co_name;
@@ -17,7 +18,6 @@ fs.readFile('2020_jizhuan.json', (err, data) => {
       let tmp_poair = points[Math.floor(Math.random() * 10)].po_air;
       let tmp_quan = points[Math.floor(Math.random() * 10)].quantity;
       tmpid++;
-	    console.log(tmp_la);
       points.push({
         "id": tmpid,
         "co_name": tmp_coname,
