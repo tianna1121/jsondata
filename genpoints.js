@@ -19,7 +19,7 @@ fs.readFile('2020_jizhuan.json', (err, data) => {
       //let tmp_addr = points[Math.floor(Math.random() * 10)].addr;
       //let tmp_powater = points[Math.floor(Math.random() * 10)].po_water;
       //let tmp_poair = points[Math.floor(Math.random() * 10)].po_air;
-      //let tmp_quan = points[Math.floor(Math.random() * 10)].quantity;
+      let tmp_quan = points[Math.floor(Math.random() * 10)].quantity;
       tmpid++;
       newpoints.push({
         "id": tmpid,
@@ -29,7 +29,7 @@ fs.readFile('2020_jizhuan.json', (err, data) => {
       //  "po_air": tmp_poair,
         "lo": tmp_lo,
         "la": tmp_la,
-      //  "quantity": tmp_quan,
+        "quantity": tmp_quan,
       });
 	    }
     }
