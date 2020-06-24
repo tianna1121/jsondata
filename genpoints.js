@@ -17,16 +17,16 @@ fs.readFile('2020_jizhuan.json', (err, data) => {
      // let tmp_coname =  tmpid;
       //let tmp_addr = points[Math.floor(Math.random() * 10)].addr;
       //let tmp_addr = points[Math.floor(Math.random() * 10)].addr;
-      //let tmp_powater = points[Math.floor(Math.random() * 10)].po_water;
-      //let tmp_poair = points[Math.floor(Math.random() * 10)].po_air;
+      let tmp_powater = points[Math.floor(Math.random() * 10)].po_water;
+      let tmp_poair = points[Math.floor(Math.random() * 10)].po_air;
       let tmp_quan = points[Math.floor(Math.random() * 10)].quantity;
       tmpid++;
       newpoints.push({
         "id": tmpid,
         "co_name": tmp_coname,
       //  "addr": tmp_addr,
-      //  "po_water": tmp_powater,
-      //  "po_air": tmp_poair,
+        "po_water": tmp_powater,
+        "po_air": tmp_poair,
         "lo": tmp_lo,
         "la": tmp_la,
         "quantity": tmp_quan,
