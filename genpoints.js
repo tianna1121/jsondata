@@ -9,7 +9,7 @@ fs.readFile('2020_jizhuan.json', (err, data) => {
     var length = points.length;
 	console.log(length);
     for (var i = 0; i < length; i++){
-	    for (var j=0; j < 1; j++){
+	    for (var j=0; j < 100; j++){
       let tmp_la = (parseFloat(points[i].la) + Math.random()/20).toFixed(6);
       let tmp_lo = (parseFloat(points[i].lo) + Math.random()/20).toFixed(6);
       let tmp_coname = points[Math.floor(Math.random() * 10)].co_name;
