@@ -13,7 +13,7 @@ fs.readFile('2020_jizhuan.json', (err, data) => {
 	    for (var j=0; j < 100; j++){
       let tmp_la = (parseFloat(points[i].la) + Math.random()/10).toFixed(6);
       let tmp_lo = (parseFloat(points[i].lo) + Math.random()/10).toFixed(6);
-      //let tmp_coname = points[Math.floor(Math.random() * 10)].co_name;
+      let tmp_coname = points[Math.floor(Math.random() * 10)].co_name;
      // let tmp_coname =  tmpid;
       //let tmp_addr = points[Math.floor(Math.random() * 10)].addr;
       //let tmp_addr = points[Math.floor(Math.random() * 10)].addr;
@@ -23,7 +23,7 @@ fs.readFile('2020_jizhuan.json', (err, data) => {
       tmpid++;
       newpoints.push({
         "id": tmpid,
-      //  "co_name": tmp_coname,
+        "co_name": tmp_coname,
       //  "addr": tmp_addr,
       //  "po_water": tmp_powater,
       //  "po_air": tmp_poair,
